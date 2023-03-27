@@ -1,10 +1,9 @@
-import './Section.scss';
 import PropTypes from 'prop-types';
-
+import { H2 } from './Section.styled';
 export const Section = ({ title, children }) => {
   return (
     <>
-      <h2 className="Title">{title}</h2>
+      <H2>{title}</H2>
       {children}
     </>
   );

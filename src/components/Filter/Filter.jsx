@@ -1,17 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Filter.scss';
+import { Label, Input } from './Filter.styled';
 
 export const Filter = ({ value, onChange }) => (
-  <label className="Filter__label">
-    Фильтр по имени
-    <input
-      className="Filter__input"
-      type="text"
-      value={value}
-      onChange={onChange}
-    />
-  </label>
+  <Label>
+    Find contact by name
+    <Input type="text" value={value} onChange={onChange} />
+  </Label>
 );
 
 Filter.protoType = {
